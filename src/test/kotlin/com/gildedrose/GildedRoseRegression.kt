@@ -1,7 +1,7 @@
 package com.gildedrose
 
+import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
 
 class GildedRoseRegression {
     @Test fun `updates over 100 days`() {
@@ -17,7 +17,7 @@ class GildedRoseRegression {
             Item(name = "Backstage passes to a TAFKAL80ETC concert", sellIn = 10, quality = 49),
             Item(name = "Backstage passes to a TAFKAL80ETC concert", sellIn = 5, quality = 49),
             // TODO this conjured item does not work properly yet
-            Item(name = "Conjured Mana Cake", sellIn = 3, quality = 6)
+            Item(name = "Conjured Mana Cake", sellIn = 3, quality = 6),
         )
 
         val gildedRose = GildedRose(items)
