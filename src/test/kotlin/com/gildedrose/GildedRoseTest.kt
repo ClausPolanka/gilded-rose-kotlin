@@ -1,7 +1,7 @@
 package com.gildedrose
 
+import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
 
 internal class GildedRoseTest {
 
@@ -11,9 +11,5 @@ internal class GildedRoseTest {
         val app = GildedRose(items)
         app.updateQuality()
         assertEquals("fixme", app.items[0].name)
-
     }
-
 }
-
-
